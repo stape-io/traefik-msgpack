@@ -1,5 +1,7 @@
 # MessagePack encoding for Golang
 
+This is a fork of [vmihailenco/msgpack](github.com/vmihailenco/msgpack) with the goal of adding support for encoding and decoding of Traefik Plugin configuration objects.
+
 [![Build Status](https://travis-ci.org/vmihailenco/msgpack.svg)](https://travis-ci.org/vmihailenco/msgpack)
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/stape-io/traefik-msgpack)](https://pkg.go.dev/github.com/stape-io/traefik-msgpack)
 [![Documentation](https://img.shields.io/badge/msgpack-documentation-informational)](https://msgpack.uptrace.dev/)
