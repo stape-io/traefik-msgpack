@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/vmihailenco/msgpack/v5/msgpcode"
+	"github.com/stape-io/traefik-msgpack/msgpcode"
 )
 
 var errArrayStruct = errors.New("msgpack: number of fields in array-encoded struct has changed")

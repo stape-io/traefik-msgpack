@@ -5,8 +5,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/stretchr/testify/require"
-	"github.com/vmihailenco/msgpack/v5"
+	"github.com/stape-io/traefik-msgpack"
 )
 
 type NoIntern struct {

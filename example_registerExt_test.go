@@ -4,8 +4,6 @@ import (
 	"encoding/binary"
 	"fmt"
 	"time"
-
-	"github.com/vmihailenco/msgpack/v5"
 )
 
 // https://github.com/fluent/fluentd/wiki/Forward-Protocol-Specification-v1#eventtime-ext-format

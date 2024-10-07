@@ -3,8 +3,6 @@ package msgpack_test
 import (
 	"bytes"
 	"fmt"
-
-	"github.com/vmihailenco/msgpack/v5"
 )
 
 func ExampleMarshal() {

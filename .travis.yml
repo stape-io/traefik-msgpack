@@ -13,7 +13,7 @@ matrix:
 env:
   - GO111MODULE=on
 
-go_import_path: github.com/vmihailenco/msgpack
+go_import_path: github.com/stape-io/traefik-msgpack
 
 before_install:
   - curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go
