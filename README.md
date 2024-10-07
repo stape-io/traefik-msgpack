@@ -1,7 +1,7 @@
 # MessagePack encoding for Golang
 
 [![Build Status](https://travis-ci.org/vmihailenco/msgpack.svg)](https://travis-ci.org/vmihailenco/msgpack)
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/vmihailenco/msgpack/v5)](https://pkg.go.dev/github.com/vmihailenco/msgpack/v5)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/stape-io/traefik-msgpack)](https://pkg.go.dev/github.com/stape-io/traefik-msgpack)
 [![Documentation](https://img.shields.io/badge/msgpack-documentation-informational)](https://msgpack.uptrace.dev/)
 [![Chat](https://discordapp.com/api/guilds/752070105847955518/widget.png)](https://discord.gg/rWtp5Aj)
 
@@ -14,35 +14,35 @@
 
 - [Documentation](https://msgpack.uptrace.dev)
 - [Chat](https://discord.gg/rWtp5Aj)
-- [Reference](https://pkg.go.dev/github.com/vmihailenco/msgpack/v5)
-- [Examples](https://pkg.go.dev/github.com/vmihailenco/msgpack/v5#pkg-examples)
+- [Reference](https://pkg.go.dev/github.com/stape-io/traefik-msgpack)
+- [Examples](https://pkg.go.dev/github.com/stape-io/traefik-msgpack#pkg-examples)
 
 ## Features
 
 - Primitives, arrays, maps, structs, time.Time and interface{}.
 - Appengine \*datastore.Key and datastore.Cursor.
 - [CustomEncoder]/[CustomDecoder] interfaces for custom encoding.
-- [Extensions](https://pkg.go.dev/github.com/vmihailenco/msgpack/v5#example-RegisterExt) to encode
+- [Extensions](https://pkg.go.dev/github.com/stape-io/traefik-msgpack#example-RegisterExt) to encode
   type information.
 - Renaming fields via `msgpack:"my_field_name"` and alias via `msgpack:"alias:another_name"`.
 - Omitting individual empty fields via `msgpack:",omitempty"` tag or all
-  [empty fields in a struct](https://pkg.go.dev/github.com/vmihailenco/msgpack/v5#example-Marshal-OmitEmpty).
-- [Map keys sorting](https://pkg.go.dev/github.com/vmihailenco/msgpack/v5#Encoder.SetSortMapKeys).
+  [empty fields in a struct](https://pkg.go.dev/github.com/stape-io/traefik-msgpack#example-Marshal-OmitEmpty).
+- [Map keys sorting](https://pkg.go.dev/github.com/stape-io/traefik-msgpack#Encoder.SetSortMapKeys).
 - Encoding/decoding all
-  [structs as arrays](https://pkg.go.dev/github.com/vmihailenco/msgpack/v5#Encoder.UseArrayEncodedStructs)
+  [structs as arrays](https://pkg.go.dev/github.com/stape-io/traefik-msgpack#Encoder.UseArrayEncodedStructs)
   or
-  [individual structs](https://pkg.go.dev/github.com/vmihailenco/msgpack/v5#example-Marshal-AsArray).
+  [individual structs](https://pkg.go.dev/github.com/stape-io/traefik-msgpack#example-Marshal-AsArray).
 - [Encoder.SetCustomStructTag] with [Decoder.SetCustomStructTag] can turn msgpack into drop-in
   replacement for any tag.
 - Simple but very fast and efficient
-  [queries](https://pkg.go.dev/github.com/vmihailenco/msgpack/v5#example-Decoder.Query).
+  [queries](https://pkg.go.dev/github.com/stape-io/traefik-msgpack#example-Decoder.Query).
 
-[customencoder]: https://pkg.go.dev/github.com/vmihailenco/msgpack/v5#CustomEncoder
-[customdecoder]: https://pkg.go.dev/github.com/vmihailenco/msgpack/v5#CustomDecoder
+[customencoder]: https://pkg.go.dev/github.com/stape-io/traefik-msgpack#CustomEncoder
+[customdecoder]: https://pkg.go.dev/github.com/stape-io/traefik-msgpack#CustomDecoder
 [encoder.setcustomstructtag]:
-  https://pkg.go.dev/github.com/vmihailenco/msgpack/v5#Encoder.SetCustomStructTag
+  https://pkg.go.dev/github.com/stape-io/traefik-msgpack#Encoder.SetCustomStructTag
 [decoder.setcustomstructtag]:
-  https://pkg.go.dev/github.com/vmihailenco/msgpack/v5#Decoder.SetCustomStructTag
+  https://pkg.go.dev/github.com/stape-io/traefik-msgpack#Decoder.SetCustomStructTag
 
 ## Installation
 
@@ -56,13 +56,13 @@ go mod init github.com/my/repo
 And then install msgpack/v5 (note _v5_ in the import; omitting it is a popular mistake):
 
 ```shell
-go get github.com/vmihailenco/msgpack/v5
+go get github.com/stape-io/traefik-msgpack
 ```
 
 ## Quickstart
 
 ```go
-import "github.com/vmihailenco/msgpack/v5"
+import "github.com/stape-io/traefik-msgpack"
 
 func ExampleMarshal() {
     type Item struct {
@@ -95,6 +95,6 @@ func ExampleMarshal() {
 
 Thanks to all the people who already contributed!
 
-<a href="https://github.com/vmihailenco/msgpack/graphs/contributors">
+<a href="https://github.com/stape-io/traefik-msgpack/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=vmihailenco/msgpack" />
 </a>

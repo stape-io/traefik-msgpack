@@ -12,9 +12,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/stape-io/traefik-msgpack/msgpcode"
 	"github.com/stretchr/testify/require"
-	"github.com/vmihailenco/msgpack/v5"
-	"github.com/vmihailenco/msgpack/v5/msgpcode"
 )
 
 //------------------------------------------------------------------------------
@@ -444,7 +443,7 @@ func (t *typeTest) requireErr(err error, s string) {
 
 var (
 	intSlice   = make([]int, 0, 3)
-	repoURL, _ = url.Parse("https://github.com/vmihailenco/msgpack")
+	repoURL, _ = url.Parse("https://github.com/stape-io/traefik-msgpack")
 	typeTests  = []typeTest{
 		{in: make(chan bool), encErr: "msgpack: Encode(unsupported chan bool)"},
 
