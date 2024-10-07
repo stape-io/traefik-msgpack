@@ -1,5 +1,3 @@
-// +build appengine
-
 package msgpack
 
 // bytesToString converts byte slice to string.
